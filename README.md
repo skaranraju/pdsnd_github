@@ -4,6 +4,9 @@
 ### Project Title
 Bikeshare stat calculator
 
+### Project Author
+Siruvuri Karan Raju
+
 ### Description
 this project calculates various statistics regarding different aspects of the bikeshare business like most popular start and end station, most popular route, no. of different types of users etc.
 
