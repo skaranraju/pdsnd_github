@@ -8,7 +8,7 @@ Bikeshare stat calculator
 Siruvuri Karan Raju
 
 ### Description
-this project calculates various statistics regarding different aspects of the bikeshare business like most popular start and end station, most popular route, no. of different types of users etc.
+this project calculates various statistics regarding different aspects of the bikeshare business like most popular start and end station, most popular route, no. of different types of users, various stats of users etc.
 
 ### Files used
 bikeshare_2.py
