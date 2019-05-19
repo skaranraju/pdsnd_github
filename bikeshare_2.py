@@ -102,14 +102,14 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # display the most common month
+    # display the most popular month
     popular_month = df['month'].mode()[0]
-    print('Most Common Month: ', popular_month)
+    print('Most popular Month: ', popular_month)
     # display the most common day of week
     popular_day_of_week = df['day_of_week'].mode()[0]
-    print('Most Common Day Of Week: ', popular_day_of_week)
+    print('Most popular Day Of Week: ', popular_day_of_week)
 
-    # display the most common start hour
+    # display the most popular start hour
     df['hour'] = df['Start Time'].dt.hour
 
 
@@ -127,18 +127,18 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
-    # display most commonly used start station
+    # display most popular used start station
     popular_start = df['Start Station'].mode()[0]
-    print("Most common Start Station: ",popular_start)
+    print("Most popular Start Station: ",popular_start)
 
-    # display most commonly used end station
+    # display most popular used end station
     popular_end = df['End Station'].mode()[0]
-    print("Most common End Station: ",popular_end )
+    print("Most popular End Station: ",popular_end )
 
-    # display most frequent combination of start station and end station trip
+    # display most popular combination of start station and end station trip
     df['Start End'] = df['Start Station'].map(str) + ' , ' + df['End Station']
     popular_start_end = df['Start End'].mode()[0]
-    print("Most Frequent Start End Station Combo: ",popular_start_end )
+    print("Most popular Start End Station Combo: ",popular_start_end )
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -187,7 +187,7 @@ def user_stats(df,city):
         recent = df['Birth Year'].max()
         print("Recent year of birth is: ",recent)
         popular_birth = df['Birth Year'].mode()[0]
-        print("Common year of birth is: ",popular_birth)
+        print("popular year of birth is: ",popular_birth)
         print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
